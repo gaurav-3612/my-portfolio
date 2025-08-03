@@ -95,9 +95,9 @@ header nav {
   cursor: pointer;
 }
 
-/* CORRECTED Mobile Menu Styles */
+/* FINAL FIX for Mobile Menu */
 .mobile-menu {
-  display: flex; /* Changed from none to flex */
+  display: flex;
   flex-direction: column;
   background-color: var(--medium-bg);
   padding: 10px 0;
@@ -112,8 +112,10 @@ header nav {
 .mobile-nav-link:hover {
   background-color: var(--light-bg);
 }
+
+/* This class is toggled by JavaScript to show/hide the menu */
 .hidden {
-  display: none; /* Removed !important for better compatibility */
+  display: none !important; /* Using !important to force the override */
 }
 
 /* --- Hero Section --- */
