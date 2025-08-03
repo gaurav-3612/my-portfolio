@@ -95,12 +95,16 @@ header nav {
   cursor: pointer;
 }
 
-/* FINAL FIX for Mobile Menu */
+/* --- NEW, MORE RELIABLE MOBILE MENU --- */
 .mobile-menu {
-  display: flex;
+  display: none; /* Hidden by default */
   flex-direction: column;
   background-color: var(--medium-bg);
   padding: 10px 0;
+}
+/* This class is added to the BODY tag by JavaScript to show the menu */
+body.menu-open .mobile-menu {
+  display: flex;
 }
 .mobile-nav-link {
   color: var(--text-light);
@@ -111,11 +115,6 @@ header nav {
 }
 .mobile-nav-link:hover {
   background-color: var(--light-bg);
-}
-
-/* This class is toggled by JavaScript to show/hide the menu */
-.hidden {
-  display: none !important; /* Using !important to force the override */
 }
 
 /* --- Hero Section --- */

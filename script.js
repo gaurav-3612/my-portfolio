@@ -1,9 +1,9 @@
-ocument.addEventListener("DOMContentLoaded", () => {
-  // --- Mobile Menu Toggle ---
+document.addEventListener("DOMContentLoaded", () => {
+  // --- Mobile Menu Toggle (NEW, MORE RELIABLE METHOD) ---
   const mobileMenuButton = document.getElementById("mobile-menu-button");
-  const mobileMenu = document.getElementById("mobile-menu");
   mobileMenuButton.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
+    // This adds/removes the 'menu-open' class to the <body> tag
+    document.body.classList.toggle("menu-open");
   });
 
   // --- Active Nav Link Highlighting on Scroll ---
@@ -50,11 +50,12 @@ ocument.addEventListener("DOMContentLoaded", () => {
   // --- Close mobile menu when a link is clicked ---
   mobileNavLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      mobileMenu.classList.add("hidden");
+      // This removes the 'menu-open' class from the <body> tag
+      document.body.classList.remove("menu-open");
     });
   });
 
-  // --- NEW: Web3Forms Contact Form Logic ---
+  // --- Web3Forms Contact Form Logic ---
   const form = document.getElementById("contact-form");
   const formResult = document.getElementById("form-result");
 
@@ -99,7 +100,7 @@ ocument.addEventListener("DOMContentLoaded", () => {
         form.reset();
         setTimeout(() => {
           formResult.style.display = "none";
-        }, 5000); // Hide the result message after 5 seconds
+        }, 5000);
       });
   });
 });
