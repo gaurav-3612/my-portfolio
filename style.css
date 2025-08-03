@@ -94,8 +94,10 @@ header nav {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+/* CORRECTED Mobile Menu Styles */
 .mobile-menu {
-  display: none;
+  display: flex; /* Changed from none to flex */
   flex-direction: column;
   background-color: var(--medium-bg);
   padding: 10px 0;
@@ -111,7 +113,7 @@ header nav {
   background-color: var(--light-bg);
 }
 .hidden {
-  display: none !important;
+  display: none; /* Removed !important for better compatibility */
 }
 
 /* --- Hero Section --- */
@@ -349,7 +351,7 @@ header nav {
   line-height: 1.5;
 }
 
-/* --- NEW Contact Form Styling --- */
+/* --- Contact Form Styling --- */
 .contact-form-container {
   max-width: 700px;
   margin: 0 auto;
@@ -386,7 +388,7 @@ header nav {
   border-radius: 8px;
   text-align: center;
   font-weight: 600;
-  display: none; /* Hidden by default */
+  display: none;
 }
 #form-result.success {
   background-color: var(--success-bg);
