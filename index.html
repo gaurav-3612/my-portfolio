@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaurav Sharma | Software Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Gaurav Sharma, a Computer Engineering student specializing in Web and App Development." />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="#" class="logo">Gaurav Sharma</a>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button id="mobile-menu-button" class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+      <div id="mobile-menu" class="mobile-menu hidden">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#experience" class="mobile-nav-link">Experience</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#achievements" class="mobile-nav-link">Achievements</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <span class="hero-intro">Hello, I'm Gaurav Sharma.</span>
+            <h1 class="hero-title">A Developer Crafting Digital Solutions.</h1>
+            <p class="hero-summary">
+              A motivated Computer Engineering student creating user-friendly
+              interfaces with React and Flutter, dedicated to mastering DSA for
+              efficient, real-world solutions.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">Get In Touch</a>
+              <a
+                href="https://github.com/gaurav-3612"
+                target="_blank"
+                class="btn btn-secondary">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <div class="hero-image-container">
+            <img src="profile.jpg" alt="Gaurav Sharma" class="hero-image" />
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <h2 class="section-title">Career & Education</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">01 Aug, 2025 - Present</div>
+              <div class="timeline-content card">
+                <h3 class="timeline-title">Machine Learning Intern</h3>
+                <p class="timeline-subtitle">Pratinik Infotech</p>
+                <ul>
+                  <li>
+                    Built and trained a machine learning model to identify
+                    fraudulent credit card transactions.
+                  </li>
+                  <li>
+                    Implemented an under-sampling strategy to resolve critical
+                    class imbalance in the dataset.
+                  </li>
+                  <li>
+                    Deployed a Logistic Regression classifier, resulting in 94%
+                    accuracy on unseen test data.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2022 - 2026</div>
+              <div class="timeline-content card">
+                <h3 class="timeline-title">
+                  B.Tech, Computer Engineering (Data Science)
+                </h3>
+                <p class="timeline-subtitle">
+                  J.C Bose University of Science & Technology, YMCA, Faridabad
+                </p>
+                <p>Current CGPA: 7.53 / 10</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2021</div>
+              <div class="timeline-content card">
+                <h3 class="timeline-title">12th CBSE Board</h3>
+                <p class="timeline-subtitle">Saraswati Vidya Mandir, Mathura</p>
+                <p>Percentage: 96%</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2019</div>
+              <div class="timeline-content card">
+                <h3 class="timeline-title">10th CBSE Board</h3>
+                <p class="timeline-subtitle">Saraswati Vidya Mandir, Mathura</p>
+                <p>Percentage: 98.60%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-dark">
+        <div class="container">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title">The Golden Spoon</h3>
+              <div class="tags">
+                <span class="tag">React.js</span
+                ><span class="tag">Material-UI</span
+                ><span class="tag">Framer Motion</span>
+              </div>
+              <p class="card-body">
+                A fully responsive restaurant website with an interactive menu
+                featuring live filtering, sorting, and a "Quick View" modal.
+                Integrated a third-party API for a functional contact form and
+                deployed on Netlify.
+              </p>
+              <a
+                href="https://the-golden-spoon.netlify.app/"
+                target="_blank"
+                class="card-link"
+                >Live Demo <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <div class="card">
+              <h3 class="card-title">Detect It</h3>
+              <div class="tags">
+                <span class="tag">Flutter</span
+                ><span class="tag">TensorFlow</span
+                ><span class="tag">Gemini API</span
+                ><span class="tag">Firebase</span>
+              </div>
+              <p class="card-body">
+                A Flutter mobile app leveraging computer vision and generative
+                AI. Enables object detection and math problem-solving from
+                images. I handled user authentication, core UI screens, and ML
+                kit integration.
+              </p>
+              <a
+                href="https://github.com/gaurav-3612/Detect_It"
+                target="_blank"
+                class="card-link"
+                >View on GitHub <i class="fab fa-github"></i
+              ></a>
+            </div>
+            <div class="card">
+              <h3 class="card-title">Spendle</h3>
+              <div class="tags">
+                <span class="tag">Flutter</span><span class="tag">SQLite</span
+                ><span class="tag">Firebase</span
+                ><span class="tag">Provider</span>
+              </div>
+              <p class="card-body">
+                A cross-platform personal finance app with a focus on intuitive
+                UI/UX. Engineered robust local persistence with SQLite and a
+                custom monthly budgeting system. Integrated secure Firebase
+                authentication and used Provider for state management.
+              </p>
+              <a
+                href="https://github.com/gaurav-3612/Spendle"
+                target="_blank"
+                class="card-link"
+                >View on GitHub <i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="section-title">Technical Expertise</h2>
+          <div class="skills-container">
+            <div class="skill-box">
+              <div class="skill-icon"><i class="fas fa-code"></i></div>
+              <h3 class="skill-title">Languages</h3>
+              <p class="skill-list">Java, Python, Dart, JavaScript, C, SQL</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill-icon"><i class="fas fa-cubes-stacked"></i></div>
+              <h3 class="skill-title">Frameworks & Libraries</h3>
+              <p class="skill-list">Flutter, React.js</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill-icon"><i class="fas fa-tools"></i></div>
+              <h3 class="skill-title">Tools & Platforms</h3>
+              <p class="skill-list">Firebase, Netlify, Git & GitHub</p>
+            </div>
+            <div class="skill-box">
+              <div class="skill-icon"><i class="fas fa-brain"></i></div>
+              <h3 class="skill-title">Core Concepts</h3>
+              <p class="skill-list">DSA, OOPS, DBMS, OS, Machine Learning</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="achievements" class="section section-dark">
+        <div class="container">
+          <h2 class="section-title">Achievements & Certifications</h2>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title">
+                <i class="fas fa-users"></i> Team Lead @ Build with India
+              </h3>
+              <p class="card-body">
+                Directed team "shadow_stack" in the design and development of a
+                finance app, securing a place in the top 4% of 25,000+
+                competitors.
+              </p>
+              <a
+                href="certificates/cert-build-with-india.jpg"
+                target="_blank"
+                class="card-link"
+                >View Certificate <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="card">
+              <h3 class="card-title">
+                <i class="fas fa-trophy"></i> Hackathon Finalist
+              </h3>
+              <p class="card-body">
+                Achieved Finalist status at HackStreet 3.0 (JIIT Noida) out of
+                100+ teams for the "Detect_it" AI-powered vision app.
+              </p>
+              <a
+                href="certificates/cert-hackstreet.jpg"
+                target="_blank"
+                class="card-link"
+                >View Certificate <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="card">
+              <h3 class="card-title">
+                <i class="fas fa-medal"></i> IIT Madras Topper
+              </h3>
+              <p class="card-body">
+                Awarded "Topper" badge for performance in the BS in Data Science
+                and Applications foundation program.
+              </p>
+              <a
+                href="certificates/cert-iit-madras.jpg"
+                target="_blank"
+                class="card-link"
+                >View Certificate <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="card">
+              <h3 class="card-title">
+                <i class="fas fa-laptop-code"></i> DSA in Java
+              </h3>
+              <p class="card-body">
+                Certificate of Completion for Data Structures & Algorithms from
+                Apna College.
+              </p>
+              <a
+                href="certificates/cert-dsa.jpg"
+                target="_blank"
+                class="card-link"
+                >View Certificate <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- UPDATED Contact Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="contact-form-container">
+            <form
+              id="contact-form"
+              action="https://api.web3forms.com/submit"
+              method="POST">
+              <!-- IMPORTANT: Replace with your own Access Key -->
+              <input
+                type="hidden"
+                name="access_key"
+                value="773c2459-8214-4385-b95d-8437a1c86d36" />
+
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="5"
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+            <div id="form-result"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Gaurav Sharma. Crafted with passion.</p>
+      </div>
+    </footer>
+
+    <button id="to-top-button" title="Go To Top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
